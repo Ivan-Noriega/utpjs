@@ -3,8 +3,8 @@ const preloader2 = document.querySelector(".animation");
 const preloader3 = document.querySelector(".animation2");
 
 window.addEventListener("load", () =>{
-    //setTimeout(carga, 2000);
-    carga();
+    setTimeout(carga, 1500);
+    //carga();
     function carga(){
         preloader.classList.add("animate__animated", "animate__backOutUp");
         
