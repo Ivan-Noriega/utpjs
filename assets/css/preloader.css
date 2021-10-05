@@ -1,0 +1,47 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.preloader{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+}
+
+.spinner{
+    width: 70px;
+    height: 70px;
+    border-top: 5px solid #D01A49;
+    border-right: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100000;
+}
+
+.spinner > div{
+    box-sizing: border-box;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100%{transform: rotate(360deg);}
+}
+
+.papa{
+    color: brown;
+}
